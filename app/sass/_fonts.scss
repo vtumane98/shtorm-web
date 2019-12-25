@@ -1,0 +1,37 @@
+@font-face {//MegaFonGraphikLC-Regular
+    font-family: 'MegaFonGraphikLC Regular';
+    src: url('../fonts/MegaFonGraphikLC-Regular.eot');
+    src: url('../fonts/MegaFonGraphikLC-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MegaFonGraphikLC-Regular.woff') format('woff'),
+    url('../fonts/MegaFonGraphikLC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {//MegaFonGraphikLC Medium
+    font-family: 'MegaFonGraphikLC Medium';
+    src: url('../fonts/MegaFonGraphikLC-Medium.eot');
+    src: url('../fonts/MegaFonGraphikLC-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MegaFonGraphikLC-Medium.woff') format('woff'),
+    url('../fonts/MegaFonGraphikLC-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {//MegaFonGraphikLC Bold
+    font-family: 'MegaFonGraphikLC Bold';
+    src: url('../fonts/MegaFonGraphikLC-Bold.eot');
+    src: url('../fonts/MegaFonGraphikLC-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MegaFonGraphikLC-Bold.woff') format('woff'),
+    url('../fonts/MegaFonGraphikLC-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin regular {
+    font-family: 'MegaFonGraphikLC Regular', sans-serif;
+}
+@mixin medium {
+    font-family: 'MegaFonGraphikLC Medium', sans-serif;
+}
+@mixin bold {
+    font-family: 'MegaFonGraphikLC Bold', sans-serif;
+}

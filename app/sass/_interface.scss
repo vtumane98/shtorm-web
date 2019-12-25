@@ -1,0 +1,101 @@
+$black:#333333;
+$white:#ffffff;
+$gray:#ededed;
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    width:100%;
+    height:100%;
+}
+body,html{
+    overflow-x: hidden;
+}
+body{
+    @include regular;
+    font-size: 15px;
+    color:$black;
+    background-color: $white;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    margin: 0;
+}
+
+.section-title{
+    background-color: $gray;
+    height: 197px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__text{
+        width: 100%;
+        padding: 0px 80px 0px;
+        max-width: 1280px;
+        margin: 0 auto;
+        h2{
+            font-size: 52px;
+            line-height: 56px;
+            letter-spacing: 0.5px;
+            @include bold;
+            max-width: 436px;
+        }
+    }
+}
+.card-list{
+    width: 100%;
+    max-width: 1280px;
+    padding: 75px 80px 75px;
+    margin: 0 auto;
+    &__title{
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0;
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+    &__icon{
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        transition: .4s;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    &__desc{
+        line-height: 24px;
+        letter-spacing: 0;
+        margin-top: 5px;
+    }
+    &__item{
+        padding: 25px 50px;
+        width: 33%;
+        display: block;
+    }
+    &__wrap{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        &--content{
+            .card-list__icon{
+                display: inline-block !important;
+                margin: 0 20px 10px 0!important;
+            }
+            &.card-list__wrap--strong{
+                .card-list__title{
+                    display: block;
+                    text-align: left;
+                }
+            }
+        }
+        &--strong{
+            .card-list__title{
+                @include medium;
+            }
+        }
+    }
+}
